@@ -8,6 +8,12 @@ const Helpers = use('Helpers')
 /** @typedef {import('@adonisjs/framework/src/View')} View */
 
 class FileController {
+  async show({ params, response }) {
+    const file = await File.findOrFail(params.id)
+
+    return response.download(Helpers.tmpPath(`uploads/${file.file}`))
+  }
+
   async store({ request, response }) {
     try {
       if (!request.file('file')) return
