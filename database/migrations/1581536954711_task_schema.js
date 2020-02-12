@@ -23,7 +23,7 @@ class TaskSchema extends Schema {
         .onUpdate('CASCADE')
         .onDelete('SET NULL')
       table
-        .integer('files_id')
+        .integer('file_id')
         .unsigned()
         .references('id')
         .inTable('files')
