@@ -16,7 +16,7 @@ class Session {
     return {
       'email.required': 'You must provide a email address.',
       'email.email': 'You must provide a valid email address.',
-      'password.required': 'You must provide a email address.'
+      'password.required': 'You must provide a password.'
     }
   }
 }
