@@ -1,5 +1,7 @@
 'use strict'
 
+const Antl = use('Antl')
+
 class Task {
   get validateAll() {
     return true
@@ -13,10 +15,7 @@ class Task {
   }
 
   get messages() {
-    return {
-      'title.required': 'You must provide a title.',
-      'due_date.date': 'You must provide a valid date.'
-    }
+    return Antl.list('validation')
   }
 }
 

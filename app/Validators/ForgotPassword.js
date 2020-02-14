@@ -1,5 +1,7 @@
 'use strict'
 
+const Antl = use('Antl')
+
 class ForgotPassword {
   get validateAll() {
     return true
@@ -13,12 +15,7 @@ class ForgotPassword {
   }
 
   get messages() {
-    return {
-      'email.required': 'You must provide a email address.',
-      'email.email': 'You must provide a valid email address.',
-      'redirect_url.required': 'You must provide a redirect url.',
-      'redirect_url.url': 'You must provide a valid url.'
-    }
+    return Antl.list('validation')
   }
 }
 

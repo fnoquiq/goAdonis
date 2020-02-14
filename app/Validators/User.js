@@ -1,5 +1,7 @@
 'use strict'
 
+const Antl = use('Antl')
+
 class User {
   get validateAll() {
     return true
@@ -14,15 +16,7 @@ class User {
   }
 
   get messages() {
-    return {
-      'username.required': 'You must provide a username.',
-      'username.unique': 'This email is already registered.',
-      'email.required': 'You must provide a email address.',
-      'email.email': 'You must provide a valid email address.',
-      'email.unique': 'This email is already registered.',
-      'password.required': 'You must provide a password.',
-      'password.confirmed': 'You must provide a password_confirmed field.'
-    }
+    return Antl.list('validation')
   }
 }
 
