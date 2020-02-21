@@ -28,4 +28,10 @@
 
 ## :dart: Rotas da API:
 
-- Para verificar as rotas disponiveis desta api, execute no terminal `adonis route:list`.
+- Para verificar as rotas disponíveis desta api, execute no terminal `adonis route:list`.
+
+---
+
+### :package: Importar configurações do Insomnia
+
+[![Abrir no Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=goAdonis&uri=https%3A%2F%2Fgithub.com%2Ffnoquiq%2FgoAdonis%2Fblob%2Fmaster%2Finsomnia.json)
